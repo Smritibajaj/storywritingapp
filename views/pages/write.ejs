@@ -10,9 +10,9 @@
         crossorigin="anonymous">
         <style>
                 .bg-light{ 
-                    background-color:#ba9241 !important;
+                    background-color: #ba9241 !important;
                 }
-            </style>
+        </style>
 </head>
 
 <body>
@@ -53,31 +53,27 @@
                     </div>
                 </nav>
             </header>
-  <main>
-    <div class="container">
-            <% for (stor of stories) { %>
-            <div class="card mt-3">
-                    <div class="card-body">
-                      <h5 class="card-title"><%= stor.articlename %></h5>
-                      <p class="card-text"><%= stor.article %></p>
-                      <button type="button" class="btn btn-primary">Like</button>
-                    </div>
-                  </div>
-        
-    <% } %>
+    <div class="container-fluid">
+<form>
+        <div class="form-group">
+                <label for="exampleInputPassword1">Story Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" autocomplete>
+            </div>
+        <div class="form-group">
+                <label for="exampleFormControlTextarea1">Story</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Save as Draft</button>
+            <button type="submit" class="btn btn-success">Submit</button>
+</form>
 </div>
-</main>
-
-<footer>
-  Awesome Site. Copyright &copy; 2016
-
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
-</html
+</html>

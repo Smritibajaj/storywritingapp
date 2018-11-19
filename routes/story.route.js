@@ -10,8 +10,11 @@ router.get('/', function(req, res){
     res.render('pages/index');
 });
 router.get('/write', function(req, res){
-    res.render('pages/create');
+    res.render('pages/write');
 });
+router.get('/draft', function(req, res){
+    res.render('pages/draft');
+})
 router.get('/test', story_controller.test);
 router.get('/stories', story_controller.allstories);
 router.post('/create', story_controller.story_create);

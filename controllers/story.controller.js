@@ -1,7 +1,7 @@
 const Story = require('../models/story.model');
 //Simple version, without validation or sanitation
 exports.write = function (req,res) {
-    res.render('pages/create');
+    res.render('pages/write');
 }
 exports.test = function (req, res) {
     res.send('Greetings from the Test controller!');
